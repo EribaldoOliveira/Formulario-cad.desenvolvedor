@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+    <head>
+        
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>formulário de Cadastro</title>
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+    <div class="body">
+
+        <div>
+            <h1 id="titulo">Cadastro de Desenvolvedor(a)</h1>
+
+            <p id="subtitulo"><u><em>Insira a informação completa</em></u></p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo"> <!--agrupar os campos-->
+
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+            <fieldset class="grupo">    
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email " required>
+            </div>
+
+            <div class="campo">
+                <label for="number"><strong>Celular</strong></label>
+                <input type="number" name="number" id="number " placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+
+            </fieldset>
+
+
+            <div class="campo">
+
+            <label class="area-dev"><strong>Qual é a sua área de desenvolvimento?</strong></label>
+            <!--checked => Já deixa um 'radio' pré-selecionado-->
+                <label class="area">
+                    <input type="radio" name="devweb" value="frontend" checked>Front-End &nbsp;&nbsp; 
+                </label>
+
+                <label class="area">
+                    <input type="radio" name="devweb" value="backend">Back-End &nbsp;&nbsp;
+                </label>
+
+                <label class="area">
+                    <input type="radio" name="devweb" value="mobile">Mobile &nbsp;&nbsp;
+                </label>
+
+                <label class="area">
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+
+
+            <div class="campo">
+                <label class="senioridade" for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione a opção</option>
+                  
+                    <option>Estagiário</option>
+                    <option>Trainee</option>
+                    <option>Júnior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+               
+                <div id="check">
+                    <label class="tecnologias"><strong>Selecione sua(s) tecnologia(s):</strong></label><br><br>
+
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="html">
+                    <label for="tecnologia1">HTML</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="css">
+                    <label for="tecnologia2">CSS</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3">JavaScript</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="typescript">
+                    <label for="tecnologia4">TypeScript</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="python">
+                    <label for="tecnologia5">Python</label>&nbsp;
+
+                    
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="php">
+                    <label for="tecnologia6">PHP</label>&nbsp;
+
+                    <br><br>
+
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="c">
+                    <label for="tecnologia7">C</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia8" name="tecnologia8" value="c++">
+                    <label for="tecnologia8">C++</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia9" name="tecnologia9" value="c#">
+                    <label for="tecnologia9">C#</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia10" name="tecnologia10" value="java">
+                    <label for="tecnologia10">Java</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia11" name="tecnologia11" value="ruby">
+                    <label for="tecnologia11">Ruby</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia12" name="tecnologia12" value="swift">
+                    <label for="tecnologia12">Swift</label>&nbsp;
+
+                    <input type="checkbox" id="tecnologia13" name="tecnologia13" value="visual basic (VB)">
+                    <label for="tecnologia13">Visual Basic (VB)</label>
+
+                </div>
+            </fieldset>
+
+            
+            <div class="campo">
+                <br>
+                <label class="experiencia" for="experiencia"><strong>Comente sobre a sua Experiência: </strong></label>
+                <textarea  rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+           <div>
+                <button class="botao" type="submit" onsubmit="">Concluído</button>
+            </div>            
+
+        </form>
+
+        <div class="rodape">
+            <strong>Aguarde nosso Contato </strong>
+        </div>
+    </div>
+    </body>
+
+</html>
